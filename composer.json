@@ -1,7 +1,7 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "bazaarcorner/official-website",
+	"description": "Bazaar Corner Official Site",
+	"keywords": ["website", "laravel"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
