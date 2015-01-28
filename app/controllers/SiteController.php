@@ -64,4 +64,19 @@ class SiteController extends BaseController
     {
         return View::make('site.shipping-and-returns');
     }
+    
+    public function login()
+    {
+        return View::make('site.login');
+    }
+    
+    public function register()
+    {
+        return View::make('site.register');
+    }
+    
+    public function logout()
+    {
+        
+    }
 }
