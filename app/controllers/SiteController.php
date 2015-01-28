@@ -40,7 +40,9 @@ class SiteController extends BaseController
     
     public function getHelp()
     {
-        return View::make('site.get-help');
+        $product = new Product();
+        
+        return View::make('site.get-help', ['tips' => $product->condition()]);
     }
     
     public function contactUs()

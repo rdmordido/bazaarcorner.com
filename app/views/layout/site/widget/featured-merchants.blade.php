@@ -1,5 +1,7 @@
 <div class="box">
-    <p class="text-uppercase"><strong>Featured Merchant of the week</strong></p>
+    <p class="text-uppercase">
+        <strong>Featured Merchant of the week</strong>
+    </p>
     
     @if(!empty($merchants))     
         @foreach($merchants as $merchant)
@@ -13,7 +15,9 @@
                 </div>
                 <div class="media-body">
                     <h5 class="media-heading">
-                        <a href="/merchant/{{$merchant['name']}}" >{{$merchant['name']}}</a>
+                        <a href="/merchant/{{$merchant['name']}}" >
+                            {{$merchant['name']}}
+                        </a>
                     </h5>
                     <small>
                         Discount {{$merchant['discount']}} &#37; off

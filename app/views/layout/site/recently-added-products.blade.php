@@ -1,6 +1,9 @@
 <div class="col-sm-12 col-md-12">
     <h4 class="pull-left"><strong>Recently Added Stuff</strong></h4>
-    <a class="pull-right view-more" href="/products">view more <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+    <a class="pull-right view-more" href="/products">
+        View More
+        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+    </a>
 </div>
 
 <div class="col-sm-12 col-md-4 ">
@@ -15,7 +18,8 @@
 </div>
 
 <div class="col-sm-12 col-md-8 r-padding">
-    <div id="added-item" class="carousel-ind carousel slide" data-ride="carousel">                
+    <div id="added-item" class="carousel-ind carousel slide"
+         data-ride="carousel">                
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             @foreach($pages as $products => $items)
@@ -26,11 +30,19 @@
                                 <div class="item-wrap">
                                     <a href="/product/{{$item['name']}}">
                                         <div class="item-price">
-                                            <span class="item-name">{{$item['name']}}</span>
-                                            <span class="item-name">&#36; {{$item['current_price']}}</span>
-                                            <span class="item-name">&#36; {{$item['last_price']}} tag price</span>
+                                            <span class="item-name">
+                                                {{$item['name']}}
+                                            </span>
+                                            <span class="item-name">
+                                                &#36;{{$item['current_price']}}
+                                            </span>
+                                            <span class="item-name">
+                                                &#36;{{$item['last_price']}}
+                                                tag price
+                                            </span>
                                         </div>
-                                        <img class="img-responsive" src="{{$item['logo']}}">
+                                        <img class="img-responsive" 
+                                             src="{{$item['logo']}}">
                                     </a>
                                 </div>
                             </div>

@@ -9,130 +9,127 @@ class Product
     public function getNewItems()
     {
         $this->products = [
-            '1' => [
+            [
                 'name' => 'Striped Appeal',
                 'logo' => 'img/recent_stuff/1st_item.jpg',
                 'current_price' => 10,
                 'last_price' => 35
             ],
-            '2' => [
+            [
                 'name' => 'Nikon Camera',
                 'logo' => 'img/recent_stuff/2nd_item.jpg',
                 'current_price' => 210,
                 'last_price' => 350
             ],
-            '3' => [
+            [
                 'name' => 'Sala Set',
                 'logo' => 'img/recent_stuff/3rd_item.jpg',
                 'current_price' => 500,
                 'last_price' => 650
             ],
-            '4' => [
+            [
                 'name' => 'Province Art Canvas',
                 'logo' => 'img/recent_stuff/4th_item.jpg',
                 'current_price' => 180,
                 'last_price' => 240
             ],
-            '5' => [
+            [
                 'name' => 'Water Based Adhesive',
                 'logo' => 'img/recent_stuff/5th_item.jpg',
                 'current_price' => 20,
                 'last_price' => 55
             ],
-            '6' => [
+            [
                 'name' => '3-days Boracay Escapade',
                 'logo' => 'img/recent_stuff/6th_item.jpg',
                 'current_price' => 280,
                 'last_price' => 550
             ],
-            
-            '7' => [
+            [
                 'name' => 'Striped Appeal',
                 'logo' => 'img/recent_stuff/1st_item.jpg',
                 'current_price' => 10,
                 'last_price' => 35
             ],
-            '8' => [
+            [
                 'name' => 'Nikon Camera',
                 'logo' => 'img/recent_stuff/2nd_item.jpg',
                 'current_price' => 210,
                 'last_price' => 350
             ],
-            '9' => [
+            [
                 'name' => 'Sala Set',
                 'logo' => 'img/recent_stuff/3rd_item.jpg',
                 'current_price' => 500,
                 'last_price' => 650
             ],
-            '10' => [
+            [
                 'name' => 'Province Art Canvas',
                 'logo' => 'img/recent_stuff/4th_item.jpg',
                 'current_price' => 180,
                 'last_price' => 240
             ],
-            '11' => [
+            [
                 'name' => 'Water Based Adhesive',
                 'logo' => 'img/recent_stuff/5th_item.jpg',
                 'current_price' => 20,
                 'last_price' => 55
             ],
-            '12' => [
+            [
                 'name' => '3-days Boracay Escapade',
                 'logo' => 'img/recent_stuff/6th_item.jpg',
                 'current_price' => 280,
                 'last_price' => 550
             ],
-            
-            '13' => [
+            [
                 'name' => 'Striped Appeal',
                 'logo' => 'img/recent_stuff/1st_item.jpg',
                 'current_price' => 10,
                 'last_price' => 35
             ],
-            '14' => [
+            [
                 'name' => 'Nikon Camera',
                 'logo' => 'img/recent_stuff/2nd_item.jpg',
                 'current_price' => 210,
                 'last_price' => 350
             ],
-            '15' => [
+            [
                 'name' => 'Sala Set',
                 'logo' => 'img/recent_stuff/3rd_item.jpg',
                 'current_price' => 500,
                 'last_price' => 650
             ],
-            '16' => [
+            [
                 'name' => 'Province Art Canvas',
                 'logo' => 'img/recent_stuff/4th_item.jpg',
                 'current_price' => 180,
                 'last_price' => 240
             ],
-            '17' => [
+            [
                 'name' => 'Water Based Adhesive',
                 'logo' => 'img/recent_stuff/5th_item.jpg',
                 'current_price' => 20,
                 'last_price' => 55
             ],
-            '18' => [
+            [
                 'name' => '3-days Boracay Escapade',
                 'logo' => 'img/recent_stuff/6th_item.jpg',
                 'current_price' => 280,
                 'last_price' => 550
             ],
-            
-            '19' => [
+            [
                 'name' => 'Striped Appeal',
                 'logo' => 'img/recent_stuff/1st_item.jpg',
                 'current_price' => 10,
                 'last_price' => 35
             ],
-            '20' => [
+            [
                 'name' => 'Nikon Camera',
                 'logo' => 'img/recent_stuff/2nd_item.jpg',
                 'current_price' => 210,
                 'last_price' => 350
             ],
-            '21' => [
+            [
                 'name' => 'Sala Set',
                 'logo' => 'img/recent_stuff/3rd_item.jpg',
                 'current_price' => 500,
@@ -178,5 +175,28 @@ class Product
         ];
         
         return $this->half_priced;
+    }
+    
+    
+    public function condition()
+    {
+        return [
+            [
+                'condition' => 'New with tags',
+                'description' => 'A brand-new, unused, and unworn item (including handmade items) in the original packaging (such as the original box or bag) and/or with the original tags attached.'
+            ],
+            [
+                'condition' => 'New without tags',
+                'description' => 'A brand-new, unused, and unworn item (including handmade items) that is not in original packaging or may be missing original packaging materials (such as the original box or bag). The original tags may not be attached.'
+            ],
+            [
+                'condition' => 'New with defects',
+                'description' => 'A brand-new, unused, and unworn item. Possible cosmetic imperfections range from natural color variations to scuffs, cuts or nicks, hanging threads or missing buttons that occasionally occur during the manufacturing or delivery process. The apparel may contain irregular or mismarked size tags. The item may be missing the original packaging materials (such as original box or tag). New factory seconds and/or new irregular items may fall into this category. The original tags may or may not be attached. See the seller’s listing for <a href="http://pages.ebay.com.sg/help/sell/item-condition.html">full</a> details and description of any imperfections.'
+            ],
+            [
+                'condition' => 'Used',
+                'description' => 'An item that has been used or worn previously. See the seller’s listing for full details and description of any imperfections.'
+            ]
+        ];
     }
 }

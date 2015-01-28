@@ -11,7 +11,7 @@
 
 @section('content')
 <div class="container">
-    <h1>How to Contact Bazaar Corner <small>We Are Here to Help You..</small></h1>
+    <h1>How to Contact Bazaar Corner <small>We Are Here to Help You</small></h1>
     <br>
     <h3>Support Team</h3>
     <p>Get in touch with our 24/7 support team, <a class="email" href="mailto:info@bazaarcorner.com">click here</a></p>
