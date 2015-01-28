@@ -1,7 +1,12 @@
 @extends('layout.site')
 
 @section('meta-name')
-<meta name="description" content="Bazaar Corner offical website">
+<meta name="description" content="Bazaar Corner is an virtual market place where people and merchants can share and sell products online. A platform where it connects merchants, individual botiques, brands and consumers with an amazing taste on the coolest products.">
+@stop
+
+@section('page-title')
+    <title>Bazaar Corner - About Us</title>
+    <meta title="Bazaar Corner - About Us">
 @stop
 
 @section('content')
