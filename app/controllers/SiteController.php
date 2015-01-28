@@ -27,7 +27,15 @@ class SiteController extends BaseController
     
     public function aboutUs()
     {
-        return View::make('site.about-us');
+        $team = new TeamMembers();
+        
+        return View::make(
+            'site.about-us',
+            [
+                'executives' => $team->executives(),
+                'developers' => $team->developers()
+            ]
+        );
     }
     
     public function getHelp()
