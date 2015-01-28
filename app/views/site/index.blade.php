@@ -9,8 +9,8 @@
 @section('page-title')
     <title>Bazaar Corner</title>
     <meta 
-        title="BazaarCorner. Your top-1 Social E-Commerce. Revolutionize the way you shop"
-    >
+        title="BazaarCorner. Your top-1 Social E-Commerce.
+            Revolutionize the way you shop">
 @stop
 
 @section('content')
