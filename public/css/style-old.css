@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,300italic);
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {    
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#services {
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #28736E;
+}
+
+#about {
+    color: #363636; 
+    font-size: 16px;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /*width: inherit;*/
+}
+
+.intro {
+    background: url(/img/header.png) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    /*display: table-cell;*/
+    vertical-align: middle;
+    padding-top: 100px;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 30px;
+    text-shadow: 2px 2px #363636;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 12px;
+    text-shadow: 1px 1px #363636;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        /*padding: 0;*/
+        padding-top: 150px;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 40px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 15px;
+    }
+}
+
+footer {
+    width: 100%;
+    color: grey;
+}
+
+a {
+    color: #2293f7;
+}
+
+a:hover {
+    color: #c9302c;
+    text-decoration: none;
+}
