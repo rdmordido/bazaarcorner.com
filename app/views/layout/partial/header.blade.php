@@ -36,7 +36,7 @@
 
         <!-- logo -->
         <div class="col-sm-12 col-md-6 logo">
-            <a href="#">
+            <a href="/">
                 <img class="img-responsive center-block" 
                      src="img/logo.png" alt="logo">
             </a>

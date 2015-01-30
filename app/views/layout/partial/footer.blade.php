@@ -26,13 +26,14 @@
                         <ul class="soc">
                             <li>
                                 <a class="soc-facebook"
-                                   href="#"
+                                   href=
+                                   "https://www.facebook.com/BazaarCorner2012"
                                 >
                                 </a>
                             </li>
                             <li>
                                 <a class="soc-twitter soc-icon-last"
-                                   href="#"
+                                   href="https://twitter.com/bazaarcorner"
                                 >    
                                 </a>
                             </li>
